@@ -15,7 +15,7 @@ sequenceDiagram
     browser ->> client: "Do something on my behalf"
   end
 
-  rect rgba(255, 255, 255, 0.2)
+  rect rgba(150, 150, 150, 0.2)
     note left of browser: Initiate flow
     %% client constructs the authorization server URI
     %% and redirects the user-agent to that URI
@@ -28,7 +28,7 @@ sequenceDiagram
     client -->> browser: 302 FOUND (Redirect)
   end
 
-  rect rgba(255, 255, 255, 0.2)
+  rect rgba(150, 150, 150, 0.2)
     note right of browser: authenticate (if req'd) + grant permission
 
     %% user-agent makes the request to the authorization server
@@ -49,7 +49,7 @@ sequenceDiagram
   end
 
 
-  rect rgba(255, 255, 255, 0.2)
+  rect rgba(150, 150, 150, 0.2)
     note left of browser: Pass access_token to client
 
     %% user-agent makes the request to the client (MPA)
