@@ -1,4 +1,4 @@
-# Implicit Flow
+# Implicit Grant
 
 ```mermaid
 %% Oauth2 goal: get client an access_token (+ maybe refresh_token + maybe id_token)
